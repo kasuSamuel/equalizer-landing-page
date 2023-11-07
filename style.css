@@ -1,0 +1,431 @@
+@keyframes logo{
+    0%{
+        transform: scale(1) ;
+
+    }
+    100%{
+        transform:scale(1.2);
+    }
+   
+}
+@keyframes pattern{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    /* overflow-x: hidden; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 100%;
+    background: #FCFAF9;
+    background-image: url(bg-main-desktop.png);
+    
+}
+
+header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-repeat:  no-repeat;
+    margin-top: 5rem;
+    margin-left: 10%;
+}
+
+#logo {
+    height: 2rem;
+    align-items: center;
+    animation: logo 2s infinite alternate-reverse;
+}
+
+#bg-pattern-1 {
+    position: absolute;
+    right: 0;
+    width: 19.5rem;
+    height: 29.25rem;
+    top: -6rem;
+    animation: pattern 1s ease-in ;
+}
+
+main {
+    margin: 8rem 10%  23rem ;
+    width: 63.4375rem;
+}
+
+main h1 {
+    color: #191826;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    letter-spacing: -0.0625rem;
+   
+}
+
+main p {
+    width: 51.5625rem;
+    color: #191826;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+    padding-top: 2rem;
+}
+
+section {
+    margin-left: 10%;
+    width: 80%;
+    height: 37.5rem;
+    border-radius: 0.75rem;
+    background: #191826;
+    background-image: url(bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: 40% -1rem;
+    background-size: 25rem 25rem;
+    display:flex;
+    position: relative;
+}
+
+#phone{
+    width: 19.5rem;
+height: 40.125rem;
+bottom: 15rem;
+left: 15.5%;
+transition: 0.8s  }
+
+#phone:hover{
+    transform: scale(1.1);
+}
+
+.premium-eq {
+    width: 27.875rem;
+height: 39.0625rem;
+border-radius: 0.75rem;
+background: #FA7453;
+top: 6rem;
+left: 28%;
+transition: .5s ease-in-out;
+}
+
+.premium-eq:hover{
+    transform: translateX(70px) scale(1.1);
+}
+
+.premium-eq-two{
+width: 100%;
+height: 65%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: 0.8s;
+}
+
+#EQ{
+    color: #FCFAF9;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+}
+
+.premium-eq p{
+    width: 20.8125rem;
+    color: #FCFAF9;
+font-size: 1.25rem;
+font-weight: 400;
+line-height: 2.125rem;
+padding-top: 2rem;
+}
+
+#dollar{
+    color: #FCFAF9;
+font-size: 4.0625rem;
+font-weight: 700;
+line-height: 3.25rem; 
+}
+
+#dollar span{
+    color: #FCFAF9;
+font-size: 1.25rem;
+font-weight: 400;
+line-height: 2rem;
+letter-spacing: -0.0125rem;
+}
+
+.download{
+    margin-top: 2rem;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.download a{
+    text-decoration: none;
+    padding: .8rem 6rem;
+    font-weight: 700;
+line-height: 2rem; 
+text-align: center;
+font-size: 1.125rem;
+letter-spacing: -0.01125rem;
+}
+
+
+#apple, #android{
+ border-radius: 0.75rem;
+background: #191826;
+color: #FCFAF9;
+transition: .5s;
+width: 20.8125rem;
+height: 3.8125rem;
+    cursor:pointer;
+border: none;
+margin-bottom: 1.3rem;
+font-size: 1.12rem;
+font-weight: 600;
+}
+
+#apple:hover{
+background: #66E2DC;
+}
+
+#android{
+ border-radius: 0.75rem;
+color: #191826;
+background: #FCFAF9;
+transition: .5s;
+}
+
+#android:hover{
+    background: #FFB964;
+}
+
+footer{
+    margin-top: 8rem;
+}
+
+.foot{
+    display: flex;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo2 {
+    height: 2rem;
+    align-items: center;
+    margin-left: 13rem;
+}
+
+.foot p{
+    width: 22rem;
+    color: #191826;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.625rem; 
+}
+
+.foot span{
+font-weight: 700;
+}
+
+.social-links{
+    margin-right: 13rem;
+    transition: 0.8s;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.social-links ul li {
+    margin-left: 2rem;
+}
+
+.social-links ul li a {
+    color: #172339;
+    text-decoration: none;
+}
+
+.social-links ul li a:hover {
+    color: #FA7453;
+}
+.social-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: #f44336;
+    transition: 0.5s;
+}
+.social-links ul li:hover::after {
+    width: 100%;
+    
+}
+
+@media (min-width: 768px) and (max-width: 885px) {
+    
+
+    body{
+        width: 100%;
+    }
+    header{
+        width: 90%;
+    }
+    #logo {
+        bottom: 3rem;
+    }
+
+    #bg-pattern-1 {
+        width: 17rem;
+        height: 25rem;
+}
+
+main{
+    width: 70%;
+}
+    main h1 {
+        width: 32rem;
+        font-size: 4rem;
+    }
+    
+    main p {
+        width: 35.7rem;
+    }
+
+
+    #phone {
+        width: 16.88788rem;
+        height: 34.75rem;
+    }
+
+    .premium-eq {
+        left: -3rem;
+        top: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+    }
+
+    .premium-eq:hover{
+        transform: scale(1);
+    }
+
+
+#EQ{
+width: 100%;
+    }
+
+.foot{
+margin:  4rem auto;
+width: 43.5rem;
+height: 12.125rem;
+display: block;
+}
+
+#logo2 {
+    left: -13rem;
+}
+
+.foot p{
+    padding-top: 2rem;
+    width: 20rem;
+}
+.social-links{
+    margin-left: 32rem;
+    bottom: 2rem;
+}
+}
+     
+@media (min-width: 360px) and (max-width: 420px) {
+    
+
+    header{
+        width: 80%;
+        margin-top: 2rem;
+    }
+    
+    #bg-pattern-1 {
+        display: none;
+    }
+
+    main{
+        width: 80%;
+        margin-top: 4rem;
+    }
+
+    main h1 {
+        width: 20rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    main p {
+        width: 20rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    section {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        bottom: 10rem;
+    }
+
+    #phone {
+        width: 13.06075rem;
+        height: 26.875rem;
+        margin-left: 3rem;
+        margin-top: 8rem;
+    }
+
+    .premium-eq {
+        width: 100%;
+        transition: 0.8s;
+     position: absolute;
+     left: 0;
+     top: 22rem;
+ 
+    }
+
+    .premium-eq:hover{
+        transform: scale(1);
+    }
+  
+    footer {
+        margin-top: 15rem;
+        margin-bottom: 10rem;
+    }
+
+    .foot {
+        top: 2rem;
+        display: block;
+        left: -12.2rem;
+    }
+    
+    .foot p {
+        width: 18rem;
+        padding-top: 1rem;
+        left: 13rem;
+        font-size: 1rem;
+    }
+
+    .social-links {
+        padding-top: 3rem;
+        left: 11rem;
+    }
+
+}
